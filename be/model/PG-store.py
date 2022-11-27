@@ -1,12 +1,13 @@
 import psycopg2
 import logging
 
+
 # con = psycopg2.connect(host='dase-cdms-2022.pg.rds.aliyuncs.com', port='5432', user='stu10205501437', password='Stu10205501437', database='stu10205501437')
 # autocommit = psycopg2.extensions.ISOLATION_LEVEL_AUTOCOMMIT
 # con.set_isolation_level(autocommit)
 # conn = con.cursor()
 
-#创建表
+# 创建表
 class Store:
     def __init__(self):
         self.host = 'dase-cdms-2022.pg.rds.aliyuncs.com'
@@ -32,12 +33,11 @@ class Store:
         self.con.set_isolation_level(autocommit)
         return self.con.cursor()
 
-
     def init_tables(self):
         try:
             conn = self.get_db_conn()
             conn.execute(
-                'CREATE TABLE User1('
+                'CREATE TABLE IF NOT EXISTS User1('
                 'user_name TEXT PRIMARY KEY,'  # 用户名
                 'pwd varchar(15) ,'  # 密码
                 'balance INTEGER,'  # 余额
@@ -125,41 +125,67 @@ class Store:
             )
 
             # 插入初始数据
-            values = [['test_id', 'test_pwd', 100, 'test_token', 'test_terminal'],
-                      ['test_id_2', 'test_pwd_2', 1000, 'test_token_2', 'test_terminal_2']]
-            sql = "insert into User1(user_name, pwd, balance, token, terminal) values (%s, %s, %s, %s, %s)"
-            conn.executemany(sql, values)
+            sql = "select * from User1"
+            conn.execute(sql)
+            if not conn.fetchall():
+                values = [['test_id', 'test_pwd', 100, 'test_token', 'test_terminal'],
+                          ['test_id_2', 'test_pwd_2', 1000, 'test_token_2', 'test_terminal_2']]
+                sql = "insert into User1(user_name, pwd, balance, token, terminal) values (%s, %s, %s, %s, %s)"
+                conn.executemany(sql, values)
 
-            values = [['book1', '霸王别姬', '李碧华', '新星出版社', '无', '无', '1', 235, 30, '1', '1', '1', '1', '1', '1', '1']]
-            sql = "insert into Book(book_id, title, author, publisher, original_title, translator, pub_year , pages, price ," \
-                  "currency_unit ,binding,isbn ,author_intro,book_intro ,content ,tags) values (%s,%s, %s, %s, %s, %s,%s, %s, %s, " \
-                  "%s, %s,%s, %s, %s, %s, %s) "
-            conn.executemany(sql, values)
+            sql = "select * from Book"
+            conn.execute(sql)
+            if not conn.fetchall():
+                values = [['book1', '霸王别姬', '李碧华', '新星出版社', '无', '无', '1', 235, 30, '1', '1', '1', '1', '1', '1', '1']]
+                sql = "insert into Book(book_id, title, author, publisher, original_title, translator, pub_year , " \
+                      "pages, price ," \
+                      "currency_unit ,binding,isbn ,author_intro,book_intro ,content ,tags) values (%s,%s, %s, %s, " \
+                      "%s, %s,%s, %s, %s, " \
+                      "%s, %s,%s, %s, %s, %s, %s) "
+                conn.executemany(sql, values)
 
-            values = [[1, 'test_id']]
-            sql = "insert into Store(store_id ,owner) values (%s, %s)"
-            conn.executemany(sql, values)
+            sql = "select * from Store"
+            conn.execute(sql)
+            if not conn.fetchall():
+                values = [[1, 'test_id']]
+                sql = "insert into Store(store_id ,owner) values (%s, %s)"
+                conn.executemany(sql, values)
 
-            values = [[1, 'book1', '霸王别姬', 10]]
-            sql = "insert into Books_in_store(store_id, book_id, book_name, book_num) values (%s, %s, %s, %s)"
-            conn.executemany(sql, values)
+            sql = "select * from Books_in_store"
+            conn.execute(sql)
+            if not conn.fetchall():
+                values = [[1, 'book1', '霸王别姬', 10]]
+                sql = "insert into Books_in_store(store_id, book_id, book_name, book_num) values (%s, %s, %s, %s)"
+                conn.executemany(sql, values)
 
-            values = [[1, 'test_id', 'test_id_2', 3, '2022-11-25 23:00:50.000', 'book1', 10]]
-            sql = "insert into Orders(order_id, seller, buyer, status, time, book_id, price) values (%s, %s, %s, %s, %s, %s, %s)"
-            conn.executemany(sql, values)
+            sql = "select * from Orders"
+            conn.execute(sql)
+            if not conn.fetchall():
+                values = [[1, 'test_id', 'test_id_2', 3, '2022-11-25 23:00:50.000', 'book1', 10]]
+                sql = "insert into Orders(order_id, seller, buyer, status, time, book_id, price) values (%s, %s, %s, " \
+                      "%s, %s, %s, %s) "
+                conn.executemany(sql, values)
 
-            values = [['test_id', 1]]
-            sql = "insert into User_order(user_name, order_id) values (%s, %s)"
-            conn.executemany(sql, values)
+            sql = "select * from User_order"
+            conn.execute(sql)
+            if not conn.fetchall():
+                values = [['test_id', 1]]
+                sql = "insert into User_order(user_name, order_id) values (%s, %s)"
+                conn.executemany(sql, values)
 
-            values = [['test_id', 1]]
-            sql = "insert into User_store(user_name, store_id) values (%s, %s)"
-            conn.executemany(sql, values)
+            sql = "select * from User_store"
+            conn.execute(sql)
+            if not conn.fetchall():
+                values = [['test_id', 1]]
+                sql = "insert into User_store(user_name, store_id) values (%s, %s)"
+                conn.executemany(sql, values)
         except conn.Error as e:
             logging.error(e)
             conn.rollback()
 
+
 database_instance: Store = None
+
 
 def init_database():
     global database_instance
