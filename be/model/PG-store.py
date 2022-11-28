@@ -2,20 +2,16 @@ import psycopg2
 import logging
 
 
-# con = psycopg2.connect(host='dase-cdms-2022.pg.rds.aliyuncs.com', port='5432', user='stu10205501437', password='Stu10205501437', database='stu10205501437')
-# autocommit = psycopg2.extensions.ISOLATION_LEVEL_AUTOCOMMIT
-# con.set_isolation_level(autocommit)
-# conn = con.cursor()
-
 # 创建表
 class Store:
     def __init__(self):
-        self.host = 'dase-cdms-2022.pg.rds.aliyuncs.com'
+        self.host = 'im1tqy.top'
         self.port = '5432'
-        self.user = 'stu10205501437'
-        self.password = 'Stu10205501437'
-        self.database = 'stu10205501437'
+        self.user = 'tqy'
+        self.password = 'tqy020107'
+        self.database = 'cdms2022'
         self.init_tables()
+
 
     def fetch_all_db(self):
         conn = self.get_db_conn()
@@ -36,6 +32,9 @@ class Store:
     def init_tables(self):
         try:
             conn = self.get_db_conn()
+        except psycopg2.DatabaseError as e:
+            print(e)
+        try:
             conn.execute(
                 'CREATE TABLE IF NOT EXISTS User1('
                 'user_name TEXT PRIMARY KEY,'  # 用户名
@@ -179,8 +178,8 @@ class Store:
                 values = [['test_id', 1]]
                 sql = "insert into User_store(user_name, store_id) values (%s, %s)"
                 conn.executemany(sql, values)
-        except conn.Error as e:
-            logging.error(e)
+        except psycopg2.DatabaseError as e:
+            print(e)
             conn.rollback()
 
 
