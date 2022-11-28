@@ -11,6 +11,8 @@ class TestRegister:
     def pre_run_initialization(self):
         self.user_id = "test_register_user_{}".format(time.time())
         self.password = "test_register_password_{}".format(time.time())
+        # self.user_id = "testacount"
+        # self.password = "testpwd"
         self.auth = auth.Auth(conf.URL)
         yield
 
