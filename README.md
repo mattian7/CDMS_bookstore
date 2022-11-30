@@ -74,11 +74,10 @@ bookstore
     pip install -r requirements.txt
 
 执行测试
-    
     bash script/test.sh
 
 bookstore/fe/data/book.db中包含测试的数据，从豆瓣网抓取的图书信息，其DDL为：
- 
+
     create table book
     (
         id TEXT primary key,
@@ -155,7 +154,7 @@ bookstore/fe/data/book.db中包含测试的数据，从豆瓣网抓取的图书�
 提取码：
 
     hj6q
-    
+
 这份数据同bookstore/fe/data/book.db的schema相同，但是有更多的数据(约3.5GB, 40000+行)
 
 可以将book_lx.db导入到数据库中，测试下单及付款两个接口的性能（最好分离负载生成和后端），测出支持的每分钟交易数，延迟等。

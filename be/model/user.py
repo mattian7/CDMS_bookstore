@@ -5,6 +5,7 @@ import psycopg2
 from be.model import error
 from be.model import db_conn
 
+
 # encode a json string like:
 #   {
 #       "user_id": [user name],
@@ -66,8 +67,8 @@ class User(db_conn.DBConn):
 
     def check_token(self, user_id: str, token: str) -> (int, str):
         sql = "select token  from User1 where user_id= %s"
-        cursor = self.conn.execute(sql, (user_id, ))
-        row = cursor.fetchone()
+        cursor = self.conn.execute(sql, (user_id,))
+        row = self.conn.fetchone()
         if row is None:
             return error.error_authorization_fail()
         db_token = row[0]
@@ -79,7 +80,6 @@ class User(db_conn.DBConn):
         sql = "select password from User1 where user_id = %s"
         cursor = self.conn.execute(sql, (user_id,))
         row = self.conn.fetchone()
-        #row = cursor.fetchone()
         if row is None:
             return error.error_authorization_fail()
 
@@ -96,17 +96,15 @@ class User(db_conn.DBConn):
                 return code, message, ""
 
             token = jwt_encode(user_id, terminal)
-            sql = "update User1" \
-                  "set token = %s , terminal = %s " \
-                  "where user_id = %s"
-            cursor = self.conn.execute(sql, (token, terminal, user_id))
-            if cursor.rowcount == 0:
-                return error.error_authorization_fail() + ("", )
-            self.conn.commit()
-        except psycopg2.Error as e:
+            self.conn.execute(
+                "UPDATE User1 set token= '%s' , terminal = '%s' where user_id = '%s'" % (token, terminal, user_id)
+            )
+
+            if self.conn.rowcount == 0:
+                return error.error_authorization_fail() + ("",)
+        except psycopg2.IntegrityError as e:
             return 528, "{}".format(str(e)), ""
-        except BaseException as e:
-            return 530, "{}".format(str(e)), ""
+
         return 200, "ok", token
 
     def logout(self, user_id: str, token: str) -> bool:
@@ -118,18 +116,15 @@ class User(db_conn.DBConn):
             terminal = "terminal_{}".format(str(time.time()))
             dummy_token = jwt_encode(user_id, terminal)
 
-            sql = "update User1" \
-                  "set token = %s , terminal = %s " \
-                  "where user_id = %s"
-            cursor = self.conn.execute(sql, (dummy_token, terminal, user_id))
-            if cursor.rowcount == 0:
+            self.conn.execute(
+                "UPDATE User1 set token= '%s' , terminal = '%s' where user_id = '%s'" % (dummy_token, terminal, user_id)
+            )
+            if self.conn.rowcount == 0:
                 return error.error_authorization_fail()
 
-            self.conn.commit()
+            # self.conn.commit()
         except psycopg2.Error as e:
             return 528, "{}".format(str(e))
-        except BaseException as e:
-            return 530, "{}".format(str(e))
         return 200, "ok"
 
     def unregister(self, user_id: str, password: str) -> (int, str):
@@ -159,17 +154,11 @@ class User(db_conn.DBConn):
 
             terminal = "terminal_{}".format(str(time.time()))
             token = jwt_encode(user_id, terminal)
-            sql = "update User1" \
-                  "set password = %s, token = %s, terminal = %s" \
-                  "where user_id = %s"
-            cursor = self.conn.execute(sql, (new_password, token, terminal, user_id))
-            if cursor.rowcount == 0:
+            self.conn.execute("update User1 set password = '%s', token = '%s', terminal = '%s'where user_id = '%s'" %(new_password, token, terminal, user_id))
+            if self.conn.rowcount == 0:
                 return error.error_authorization_fail()
 
-            self.conn.commit()
-        except psycopg2.Error as e:
+            # self.conn.commit()
+        except psycopg2.IntegrityError as e:
             return 528, "{}".format(str(e))
-        except BaseException as e:
-            return 530, "{}".format(str(e))
         return 200, "ok"
-

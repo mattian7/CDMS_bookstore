@@ -418,3 +418,515 @@ INFO:werkzeug:127.0.0.1 - - [28/Nov/2022 19:54:39] "[31m[1mPOST /auth/unregist
 INFO:werkzeug:127.0.0.1 - - [28/Nov/2022 19:54:39] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
 INFO:werkzeug:127.0.0.1 - - [28/Nov/2022 19:54:39] "[35m[1mPOST /auth/register HTTP/1.1[0m" 512 -
 INFO:werkzeug:127.0.0.1 - - [28/Nov/2022 19:54:39] "[37mGET /shutdown HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:28:47] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:28:47] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:28:47] "[35m[1mPOST /seller/create_store HTTP/1.1[0m" 530 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:28:47] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:28:47] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:28:47] "[35m[1mPOST /seller/create_store HTTP/1.1[0m" 530 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:28:47] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:28:47] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:28:48] "[35m[1mPOST /seller/create_store HTTP/1.1[0m" 530 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:28:48] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:28:48] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:28:48] "[35m[1mPOST /seller/create_store HTTP/1.1[0m" 530 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:28:48] "[37mGET /shutdown HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:30:27] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:30:28] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:30:28] "[35m[1mPOST /seller/create_store HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:30:28] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:30:28] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:30:28] "[35m[1mPOST /seller/create_store HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:30:28] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:30:28] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:30:28] "[35m[1mPOST /seller/create_store HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:30:28] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:30:28] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:30:29] "[35m[1mPOST /seller/create_store HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:30:29] "[37mGET /shutdown HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:32:55] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:32:55] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:32:55] "[35m[1mPOST /seller/create_store HTTP/1.1[0m" 530 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:32:55] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:32:55] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:32:55] "[35m[1mPOST /seller/create_store HTTP/1.1[0m" 530 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:32:55] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:32:55] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:32:55] "[35m[1mPOST /seller/create_store HTTP/1.1[0m" 530 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:32:55] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:32:56] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:32:56] "[35m[1mPOST /seller/create_store HTTP/1.1[0m" 530 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:32:56] "[37mGET /shutdown HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:34:50] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:34:51] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:34:51] "[35m[1mPOST /seller/create_store HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:34:51] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:34:51] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:34:51] "[35m[1mPOST /seller/create_store HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:34:51] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:34:51] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:34:51] "[35m[1mPOST /seller/create_store HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:34:51] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:34:51] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:34:51] "[35m[1mPOST /seller/create_store HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:34:51] "[37mGET /shutdown HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:36:26] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:36:26] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:36:27] "[35m[1mPOST /seller/create_store HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:36:27] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:36:27] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:36:27] "[35m[1mPOST /seller/create_store HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:36:27] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:36:27] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:36:27] "[35m[1mPOST /seller/create_store HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:36:27] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:36:27] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:36:27] "[35m[1mPOST /seller/create_store HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:36:27] "[37mGET /shutdown HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:41:05] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:41:05] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:41:05] "[35m[1mPOST /seller/create_store HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:41:06] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:41:06] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:41:06] "[35m[1mPOST /seller/create_store HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:41:06] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:41:06] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:41:06] "[35m[1mPOST /seller/create_store HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:41:06] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:41:06] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:41:06] "[35m[1mPOST /seller/create_store HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:41:06] "[37mGET /shutdown HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:42:21] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:42:21] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+ERROR:be.serve:Exception on /seller/create_store [POST]
+Traceback (most recent call last):
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\anaconda\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\桌面文件\大三上笔记\数据管理系统\书店\2022_CDMS_PJ2_REQUIRE-master\2022_cdms_pj2_require\bookstore\be\view\seller.py", line 15, in seller_create_store
+    code, message = s.create_store(user_id, store_id)
+  File "D:\桌面文件\大三上笔记\数据管理系统\书店\2022_CDMS_PJ2_REQUIRE-master\2022_cdms_pj2_require\bookstore\be\model\seller.py", line 59, in create_store
+    if self.store_id_exist(store_id):
+  File "D:\桌面文件\大三上笔记\数据管理系统\书店\2022_CDMS_PJ2_REQUIRE-master\2022_cdms_pj2_require\bookstore\be\model\db_conn.py", line 25, in store_id_exist
+    cursor = self.conn.execute("SELECT store_id FROM Store WHERE store_id = %s", (store_id,))
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type integer: "test_add_books_store_id_244205aa-707a-11ed-b591-6c6a776275ae"
+LINE 1: SELECT store_id FROM Store WHERE store_id = 'test_add_books_...
+                                                    ^
+
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:42:21] "[35m[1mPOST /seller/create_store HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:42:21] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:42:22] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+ERROR:be.serve:Exception on /seller/create_store [POST]
+Traceback (most recent call last):
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\anaconda\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\桌面文件\大三上笔记\数据管理系统\书店\2022_CDMS_PJ2_REQUIRE-master\2022_cdms_pj2_require\bookstore\be\view\seller.py", line 15, in seller_create_store
+    code, message = s.create_store(user_id, store_id)
+  File "D:\桌面文件\大三上笔记\数据管理系统\书店\2022_CDMS_PJ2_REQUIRE-master\2022_cdms_pj2_require\bookstore\be\model\seller.py", line 59, in create_store
+    if self.store_id_exist(store_id):
+  File "D:\桌面文件\大三上笔记\数据管理系统\书店\2022_CDMS_PJ2_REQUIRE-master\2022_cdms_pj2_require\bookstore\be\model\db_conn.py", line 25, in store_id_exist
+    cursor = self.conn.execute("SELECT store_id FROM Store WHERE store_id = %s", (store_id,))
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type integer: "test_add_books_store_id_247c2bde-707a-11ed-91e5-6c6a776275ae"
+LINE 1: SELECT store_id FROM Store WHERE store_id = 'test_add_books_...
+                                                    ^
+
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:42:22] "[35m[1mPOST /seller/create_store HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:42:22] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:42:22] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+ERROR:be.serve:Exception on /seller/create_store [POST]
+Traceback (most recent call last):
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\anaconda\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\桌面文件\大三上笔记\数据管理系统\书店\2022_CDMS_PJ2_REQUIRE-master\2022_cdms_pj2_require\bookstore\be\view\seller.py", line 15, in seller_create_store
+    code, message = s.create_store(user_id, store_id)
+  File "D:\桌面文件\大三上笔记\数据管理系统\书店\2022_CDMS_PJ2_REQUIRE-master\2022_cdms_pj2_require\bookstore\be\model\seller.py", line 59, in create_store
+    if self.store_id_exist(store_id):
+  File "D:\桌面文件\大三上笔记\数据管理系统\书店\2022_CDMS_PJ2_REQUIRE-master\2022_cdms_pj2_require\bookstore\be\model\db_conn.py", line 25, in store_id_exist
+    cursor = self.conn.execute("SELECT store_id FROM Store WHERE store_id = %s", (store_id,))
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type integer: "test_add_books_store_id_24acdbd2-707a-11ed-8c07-6c6a776275ae"
+LINE 1: SELECT store_id FROM Store WHERE store_id = 'test_add_books_...
+                                                    ^
+
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:42:22] "[35m[1mPOST /seller/create_store HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:42:22] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:42:22] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+ERROR:be.serve:Exception on /seller/create_store [POST]
+Traceback (most recent call last):
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\anaconda\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\桌面文件\大三上笔记\数据管理系统\书店\2022_CDMS_PJ2_REQUIRE-master\2022_cdms_pj2_require\bookstore\be\view\seller.py", line 15, in seller_create_store
+    code, message = s.create_store(user_id, store_id)
+  File "D:\桌面文件\大三上笔记\数据管理系统\书店\2022_CDMS_PJ2_REQUIRE-master\2022_cdms_pj2_require\bookstore\be\model\seller.py", line 59, in create_store
+    if self.store_id_exist(store_id):
+  File "D:\桌面文件\大三上笔记\数据管理系统\书店\2022_CDMS_PJ2_REQUIRE-master\2022_cdms_pj2_require\bookstore\be\model\db_conn.py", line 25, in store_id_exist
+    cursor = self.conn.execute("SELECT store_id FROM Store WHERE store_id = %s", (store_id,))
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type integer: "test_add_books_store_id_24c8c997-707a-11ed-953b-6c6a776275ae"
+LINE 1: SELECT store_id FROM Store WHERE store_id = 'test_add_books_...
+                                                    ^
+
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:42:22] "[35m[1mPOST /seller/create_store HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 14:42:22] "[37mGET /shutdown HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:19:33] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:19:33] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:19:33] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+ERROR:be.serve:Exception on /seller/add_book [POST]
+Traceback (most recent call last):
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\anaconda\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\桌面文件\大三上笔记\数据管理系统\书店\2022_CDMS_PJ2_REQUIRE-master\2022_cdms_pj2_require\bookstore\be\view\seller.py", line 27, in seller_add_book
+    code, message = s.add_book(user_id, store_id, book_info.get("id"), json.dumps(book_info), stock_level)
+TypeError: add_book() takes 5 positional arguments but 6 were given
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:19:33] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:19:33] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:19:34] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:19:34] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+ERROR:be.serve:Exception on /seller/add_book [POST]
+Traceback (most recent call last):
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\anaconda\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\桌面文件\大三上笔记\数据管理系统\书店\2022_CDMS_PJ2_REQUIRE-master\2022_cdms_pj2_require\bookstore\be\view\seller.py", line 27, in seller_add_book
+    code, message = s.add_book(user_id, store_id, book_info.get("id"), json.dumps(book_info), stock_level)
+TypeError: add_book() takes 5 positional arguments but 6 were given
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:19:34] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 500 -
+ERROR:be.serve:Exception on /seller/add_book [POST]
+Traceback (most recent call last):
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\anaconda\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\桌面文件\大三上笔记\数据管理系统\书店\2022_CDMS_PJ2_REQUIRE-master\2022_cdms_pj2_require\bookstore\be\view\seller.py", line 27, in seller_add_book
+    code, message = s.add_book(user_id, store_id, book_info.get("id"), json.dumps(book_info), stock_level)
+TypeError: add_book() takes 5 positional arguments but 6 were given
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:19:34] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:19:34] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:19:34] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:19:34] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+ERROR:be.serve:Exception on /seller/add_book [POST]
+Traceback (most recent call last):
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\anaconda\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\桌面文件\大三上笔记\数据管理系统\书店\2022_CDMS_PJ2_REQUIRE-master\2022_cdms_pj2_require\bookstore\be\view\seller.py", line 27, in seller_add_book
+    code, message = s.add_book(user_id, store_id, book_info.get("id"), json.dumps(book_info), stock_level)
+TypeError: add_book() takes 5 positional arguments but 6 were given
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:19:34] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:19:34] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:19:34] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:19:34] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+ERROR:be.serve:Exception on /seller/add_book [POST]
+Traceback (most recent call last):
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\anaconda\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\桌面文件\大三上笔记\数据管理系统\书店\2022_CDMS_PJ2_REQUIRE-master\2022_cdms_pj2_require\bookstore\be\view\seller.py", line 27, in seller_add_book
+    code, message = s.add_book(user_id, store_id, book_info.get("id"), json.dumps(book_info), stock_level)
+TypeError: add_book() takes 5 positional arguments but 6 were given
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:19:34] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 500 -
+ERROR:be.serve:Exception on /seller/add_book [POST]
+Traceback (most recent call last):
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\anaconda\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\anaconda\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\桌面文件\大三上笔记\数据管理系统\书店\2022_CDMS_PJ2_REQUIRE-master\2022_cdms_pj2_require\bookstore\be\view\seller.py", line 27, in seller_add_book
+    code, message = s.add_book(user_id, store_id, book_info.get("id"), json.dumps(book_info), stock_level)
+TypeError: add_book() takes 5 positional arguments but 6 were given
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:19:34] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:19:34] "[37mGET /shutdown HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:21:50] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:21:51] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:21:51] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:21:51] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:21:51] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:21:51] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:21:51] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:21:51] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 513 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:21:51] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 513 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:21:51] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:21:51] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:21:52] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:21:52] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:21:52] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:21:52] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:21:52] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:21:52] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 511 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:21:52] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 511 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:21:52] "[37mGET /shutdown HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:23:36] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:23:36] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:23:36] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:23:36] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:23:36] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:23:36] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:23:36] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:23:36] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 513 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:23:36] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 513 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:23:37] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:23:37] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:23:37] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:23:37] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:23:37] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:23:37] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:23:37] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:23:37] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 511 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:23:37] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 511 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:23:37] "[37mGET /shutdown HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:24:24] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:24:24] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:24:24] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:24:24] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:24:24] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:24:24] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:24:24] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:24:24] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 513 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:24:24] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 513 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:24:25] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:24:25] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:24:25] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:24:25] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:24:25] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:24:25] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:24:25] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:24:25] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 511 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:24:25] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 511 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 16:24:25] "[37mGET /shutdown HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 17:41:18] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 17:41:18] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 17:41:18] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 17:41:19] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 17:41:19] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 17:41:19] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 17:41:19] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 17:41:19] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 513 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 17:41:19] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 513 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 17:41:19] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 17:41:19] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 17:41:19] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 17:41:20] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 17:41:20] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 17:41:20] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 17:41:20] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 17:41:20] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 511 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 17:41:20] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 511 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 17:41:20] "[37mGET /shutdown HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 18:04:57] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 18:04:57] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 18:04:57] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 18:04:57] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 18:04:58] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 18:04:58] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 18:04:58] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 18:04:58] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 513 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 18:04:58] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 513 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 18:04:58] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 18:04:58] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 18:04:58] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 18:04:58] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 18:04:58] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 18:04:58] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 18:04:58] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 18:04:58] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 511 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 18:04:59] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 511 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 18:04:59] "[37mGET /shutdown HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:12:24] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:12:25] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:12:25] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:12:25] "[37mPOST /seller/add_book HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:12:25] "[37mPOST /seller/add_book HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:12:25] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:12:25] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:12:25] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:12:25] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 513 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:12:25] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 513 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:12:25] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:12:25] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:12:25] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:12:25] "[37mPOST /seller/add_book HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:12:25] "[37mPOST /seller/add_book HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:12:26] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 516 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:12:26] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 516 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:12:26] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:12:26] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:12:26] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:12:26] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 511 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:12:26] "[35m[1mPOST /seller/add_book HTTP/1.1[0m" 511 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:12:26] "[37mGET /shutdown HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:40] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:40] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:40] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:41] "[37mPOST /seller/add_book HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:41] "[37mPOST /seller/add_book HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:41] "[37mPOST /seller/add_book HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:41] "[37mPOST /seller/add_book HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:41] "[37mPOST /seller/add_book HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:41] "[35m[1mPOST /seller/add_stock_level HTTP/1.1[0m" 511 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:41] "[35m[1mPOST /seller/add_stock_level HTTP/1.1[0m" 511 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:41] "[35m[1mPOST /seller/add_stock_level HTTP/1.1[0m" 511 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:41] "[35m[1mPOST /seller/add_stock_level HTTP/1.1[0m" 511 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:41] "[35m[1mPOST /seller/add_stock_level HTTP/1.1[0m" 511 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:41] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:41] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:41] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:42] "[37mPOST /seller/add_book HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:42] "[37mPOST /seller/add_book HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:42] "[37mPOST /seller/add_book HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:42] "[37mPOST /seller/add_book HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:42] "[37mPOST /seller/add_book HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:42] "[35m[1mPOST /seller/add_stock_level HTTP/1.1[0m" 513 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:42] "[35m[1mPOST /seller/add_stock_level HTTP/1.1[0m" 513 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:42] "[35m[1mPOST /seller/add_stock_level HTTP/1.1[0m" 513 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:42] "[35m[1mPOST /seller/add_stock_level HTTP/1.1[0m" 513 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:42] "[35m[1mPOST /seller/add_stock_level HTTP/1.1[0m" 513 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:42] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:42] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:42] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:43] "[37mPOST /seller/add_book HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:43] "[37mPOST /seller/add_book HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:43] "[37mPOST /seller/add_book HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:43] "[37mPOST /seller/add_book HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:43] "[37mPOST /seller/add_book HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:43] "[35m[1mPOST /seller/add_stock_level HTTP/1.1[0m" 515 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:43] "[35m[1mPOST /seller/add_stock_level HTTP/1.1[0m" 515 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:43] "[35m[1mPOST /seller/add_stock_level HTTP/1.1[0m" 515 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:43] "[35m[1mPOST /seller/add_stock_level HTTP/1.1[0m" 515 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:43] "[35m[1mPOST /seller/add_stock_level HTTP/1.1[0m" 515 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:43] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:43] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:43] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:43] "[37mPOST /seller/add_book HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:43] "[37mPOST /seller/add_book HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:43] "[37mPOST /seller/add_book HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:44] "[37mPOST /seller/add_book HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:44] "[37mPOST /seller/add_book HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:44] "[37mPOST /seller/add_stock_level HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:44] "[37mPOST /seller/add_stock_level HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:44] "[37mPOST /seller/add_stock_level HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:44] "[37mPOST /seller/add_stock_level HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:44] "[37mPOST /seller/add_stock_level HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:13:44] "[37mGET /shutdown HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:14:21] "GET /shutdown HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:16:22] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:16:22] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:16:22] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:16:22] "[37mPOST /auth/register HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:16:22] "[37mPOST /auth/login HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:16:22] "[37mPOST /seller/create_store HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:16:22] "[35m[1mPOST /seller/create_store HTTP/1.1[0m" 514 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 21:16:22] "[37mGET /shutdown HTTP/1.1[0m" 200 -
