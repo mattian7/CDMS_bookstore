@@ -58,6 +58,10 @@ def error_not_sufficient_funds(order_id):
     return 519, error_code[518].format(order_id)
 
 
+def error_invalid_order_status(order_id):
+    return 520, error_code[520].format(order_id)
+
+
 def error_authorization_fail():
     return 401, error_code[401]
 
