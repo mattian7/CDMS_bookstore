@@ -1,5 +1,7 @@
 import psycopg2
 import pandas as pd
+import jieba
+import numpy as np
 import os
 import logging
 
@@ -37,6 +39,9 @@ class Store:
         except psycopg2.DatabaseError as e:
             print(e)
         try:
+            # conn.execute("CREATE EXTENSION zhparser;")
+            # conn.execute("CREATE TEXT SEARCH CONFIGURATION zhcfg (PARSER = zhparser);")
+            # conn.execute("ALTER TEXT SEARCH CONFIGURATION zhcfg ADD MAPPING FOR n,v,a,i,e,j,l WITH simple;")
             conn.execute(
                 'CREATE TABLE IF NOT EXISTS User1('
                 'user_id TEXT PRIMARY KEY,'  # 用户名
@@ -65,7 +70,8 @@ class Store:
                 'book_intro text,'
                 'content TEXT,'
                 'tags TEXT,'
-                'picture BYTEA'
+                'picture BYTEA,'
+                'v_content TEXT'
                 ')'
             )
 
@@ -124,13 +130,27 @@ class Store:
                 f = open("../fe/data/book.csv", encoding="utf-8")
                 values = pd.read_csv(f)
                 f.close()
-                values=values.values
+                s_content = values.iloc[:, 14]
+                v_content = []
+                for i in range(len(s_content)):
+                    vector = ''
+                    seg_list = jieba.cut(str(s_content[i]))
+                    for s in seg_list:
+                        vector += s
+                        vector += ' '
+                    v_content.append(vector)
+                v_content = np.array(v_content)
+                values['v_content'] = v_content
+                values = values.values
                 sql = "insert into Book(book_id, title, author, publisher, original_title, translator, pub_year , " \
                       "pages, price ," \
-                      "currency_unit ,binding,isbn ,author_intro,book_intro ,content ,tags, picture) values (%s,%s, %s, %s, " \
+                      "currency_unit ,binding,isbn ,author_intro,book_intro ,content ,tags, picture, v_content) values (%s,%s, %s, %s, " \
                       "%s, %s,%s, %s, %s, " \
-                      "%s, %s,%s, %s, %s, %s, %s, %s) "
+                      "%s, %s,%s, %s, %s, %s, %s, %s, %s) "
                 conn.executemany(sql, values)
+                conn.execute("alter table Book add column tscontent tsvector;")
+                conn.execute("update Book set tscontent=to_tsvector('simple', v_content);")
+
 
             sql = "select * from Store"
             conn.execute(sql)
