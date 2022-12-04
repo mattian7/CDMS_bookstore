@@ -55,23 +55,21 @@ class Seller(db_conn.DBConn):
         return 200, "ok"
 
     def create_store(self, user_id: str, store_id: str) -> (int, str):
-        # try:
-        if not self.user_id_exist(user_id):
-            return error.error_non_exist_user_id(user_id)
-        if self.store_id_exist(store_id):
-            return error.error_exist_store_id(store_id)
+        try:
+            if not self.user_id_exist(user_id):
+                return error.error_non_exist_user_id(user_id)
+            if self.store_id_exist(store_id):
+                return error.error_exist_store_id(store_id)
 
-        self.conn.execute("INSERT into Store (store_id, owner)"
+            self.conn.execute("INSERT into Store (store_id, owner)"
                           "VALUES (%s, %s)", (store_id, user_id))
-
-        # except psycopg2.Error as e:
-        #     print(e)
-        #     return 528, "{}".format(str(e))
-        # except BaseException as e:
-        #     print(e)
-        #     return 530, "{}".format(str(e))
+        except psycopg2.Error as e:
+            print(e)
+            return 528, "{}".format(str(e))
+        except BaseException as e:
+            print(e)
+            return 530, "{}".format(str(e))
         return 200, "ok"
-
 
     # 发货
     def send(self,seller_id,order_id):
@@ -94,3 +92,4 @@ class Seller(db_conn.DBConn):
             return 528, "{}".format(str(e))
 
         return 200, "ok"
+
