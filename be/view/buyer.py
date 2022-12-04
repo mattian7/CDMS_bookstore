@@ -61,7 +61,7 @@ def receive():
 
 # 查询订单
 @bp_buyer.route("/query", methods=["POST"])
-def receive():
+def query():
     user_id: str = request.json.get("user_id")
     order_id: str = request.json.get("order_id")
     b = Buyer()
@@ -72,9 +72,10 @@ def receive():
 
 # 取消订单
 @bp_buyer.route("/cancel", methods=["POST"])
-def receive():
+def cancel():
+    user_id: str = request.json.get("user_id")
     order_id: str = request.json.get("order_id")
-    o = Order()
-    code, message = o.cancel_order(order_id)
+    b = Buyer()
+    code, message = b.cancel_order(user_id, order_id)
 
     return jsonify({"message": message}), code
