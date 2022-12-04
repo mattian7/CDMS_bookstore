@@ -163,3 +163,50 @@ class Buyer(db_conn.DBConn):
             return error.error_exist_user_id(user_id)
 
         return 200, "ok"
+
+    
+    # 收货
+    def receive(self, user_id: str, password: str, order_id: str) -> (int, str):
+        try:
+            if not self.user_id_exist(user_id): # 判断 user_id 是否存在
+                return error.error_non_exist_user_id(user_id)
+            if not self.order_id_exist(order_id):  # 判断 order_id 是否存在
+                return error.error_invalid_order_id(order_id)
+
+            self.conn.execute("SELECT password FROM User1 WHERE user_id = '%s'" %(user_id))
+            row = self.conn.fetchone()
+            if password != row[0]: # 密码错误
+                return error.error_authorization_fail()
+
+            self.conn.execute("SELECT order_id, seller, buyer, status, price FROM Orders WHERE order_id = '%s'" %(order_id))
+            row = self.conn.fetchone()
+            if row is None:
+                return error.error_invalid_order_id(order_id)
+
+            order_id = row[0]
+            seller_id = row[1]
+            buyer_id = row[2]
+            status = row[3]
+            total_price = row[4]
+
+            if buyer_id != user_id:
+                return error.error_authorization_fail()
+            if status != 2:
+                return error.error_invalid_order_status(order_id)
+            if not self.user_id_exist(seller_id):
+                return error.error_non_exist_user_id(seller_id)
+
+            # 订单状态改为已收货完成订单
+            self.conn.execute("UPDATE Orders set status=3 WHERE order_id = '%s'" %(order_id))
+            if self.conn.rowcount == 0:
+                return error.error_non_exist_user_id(buyer_id)
+
+            # 给卖家余额加上
+            self.conn.execute("UPDATE User1 set balance = balance + '%s'  WHERE user_id = '%s'" %(total_price, seller_id))
+            if self.conn.rowcount == 0:
+                return error.error_non_exist_user_id(buyer_id)
+
+        except psycopg2.Error:
+            return error.error_exist_user_id(user_id)
+        
+        return 200, "ok"

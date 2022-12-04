@@ -6,6 +6,7 @@ from be.model.buyer import Buyer
 bp_buyer = Blueprint("buyer", __name__, url_prefix="/buyer")
 
 
+# 下单
 @bp_buyer.route("/new_order", methods=["POST"])
 def new_order():
     user_id: str = request.json.get("user_id")
@@ -23,6 +24,7 @@ def new_order():
     return jsonify({"message": message, "order_id": order_id}), code
 
 
+# 付款
 @bp_buyer.route("/payment", methods=["POST"])
 def payment():
     user_id: str = request.json.get("user_id")
@@ -33,6 +35,7 @@ def payment():
     return jsonify({"message": message}), code
 
 
+# 充值
 @bp_buyer.route("/add_funds", methods=["POST"])
 def add_funds():
     user_id = request.json.get("user_id")
@@ -40,4 +43,16 @@ def add_funds():
     add_value = request.json.get("add_value")
     b = Buyer()
     code, message = b.add_funds(user_id, password, add_value)
+    return jsonify({"message": message}), code
+
+
+# 收货
+@bp_buyer.route("/receive", methods=["POST"])
+def receive():
+    user_id: str = request.json.get("user_id")
+    order_id: str = request.json.get("order_id")
+    password: str = request.json.get("password")
+    b = Buyer()
+    code, message = b.receive(user_id, password, order_id)
+
     return jsonify({"message": message}), code

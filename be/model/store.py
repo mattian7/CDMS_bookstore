@@ -1,7 +1,5 @@
 import psycopg2
 import pandas as pd
-import jieba
-import numpy as np
 import os
 import logging
 import datetime, time
@@ -39,9 +37,6 @@ class Store:
         except psycopg2.DatabaseError as e:
             print(e)
         try:
-            # conn.execute("CREATE EXTENSION zhparser;")
-            # conn.execute("CREATE TEXT SEARCH CONFIGURATION zhcfg (PARSER = zhparser);")
-            # conn.execute("ALTER TEXT SEARCH CONFIGURATION zhcfg ADD MAPPING FOR n,v,a,i,e,j,l WITH simple;")
             conn.execute(
                 'CREATE TABLE IF NOT EXISTS User1('
                 'user_id TEXT PRIMARY KEY,'  # 用户名
@@ -70,8 +65,7 @@ class Store:
                 'book_intro text,'
                 'content TEXT,'
                 'tags TEXT,'
-                'picture BYTEA,'
-                'v_content TEXT'
+                'picture BYTEA'
                 ')'
             )
 
@@ -103,7 +97,7 @@ class Store:
                 'buyer TEXT,'  # 买家
                 'store TEXT,'
                 'status INTEGER,'  # 0为未付款（*这里可以不要 如果我们后面写的是点击购买后直接扣款就直接进入状态1），
-                # 1为以付款未发货（买家付款后，商家填入物流前），
+                # 1为已付款未发货（买家付款后，商家填入物流前），
                 # 2为已发货未收货（商家填入物流后，买家确认收货前），3为已收货完成订单 
                 'time TEXT,'  # 下单时间，格式为 'YYYY-MM-DD HH:MM:SS' 的日期
                 'book_id TEXT,'  # 书本编号
@@ -127,30 +121,16 @@ class Store:
             sql = "select * from Book"
             conn.execute(sql)
             if not conn.fetchall():
-                f = open("../fe/data/book.csv", encoding="utf-8")
+                f = open("C:/Users/18210/Desktop/2022_cdms_pj2_require/fe/data/book.csv", encoding="utf-8") # ../fe/data/book.csv
                 values = pd.read_csv(f)
                 f.close()
-                s_content = values.iloc[:, 14]
-                v_content = []
-                for i in range(len(s_content)):
-                    vector = ''
-                    seg_list = jieba.cut(str(s_content[i]))
-                    for s in seg_list:
-                        vector += s
-                        vector += ' '
-                    v_content.append(vector)
-                v_content = np.array(v_content)
-                values['v_content'] = v_content
-                values = values.values
+                values=values.values
                 sql = "insert into Book(book_id, title, author, publisher, original_title, translator, pub_year , " \
                       "pages, price ," \
-                      "currency_unit ,binding,isbn ,author_intro,book_intro ,content ,tags, picture, v_content) values (%s,%s, %s, %s, " \
+                      "currency_unit ,binding,isbn ,author_intro,book_intro ,content ,tags, picture) values (%s,%s, %s, %s, " \
                       "%s, %s,%s, %s, %s, " \
-                      "%s, %s,%s, %s, %s, %s, %s, %s, %s) "
+                      "%s, %s,%s, %s, %s, %s, %s, %s) "
                 conn.executemany(sql, values)
-                conn.execute("alter table Book add column tscontent tsvector;")
-                conn.execute("update Book set tscontent=to_tsvector('simple', v_content);")
-
 
             sql = "select * from Store"
             conn.execute(sql)

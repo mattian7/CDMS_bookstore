@@ -50,3 +50,10 @@ class Seller:
         headers = {"token": self.token}
         r = requests.post(url, headers=headers, json=json)
         return r.status_code
+
+    def send(self, store_id:str ,order_id:str) -> int:
+        json={"store_id": store_id, "order_id": order_id}
+        url = urljoin(self.url_prefix, "send")
+        headers = {"token": self.token}
+        r = requests.post(url, headers=headers, json=json)
+        return r.status_code
