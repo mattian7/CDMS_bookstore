@@ -28,3 +28,11 @@ class DBConn:
             return False
         else:
             return True
+
+    def order_id_exist(self, order_id):
+        cursor = self.conn.execute("SELECT order_id FROM new_order WHERE order_id = %s", (order_id))
+        row = self.conn.fetchone()
+        if row is None:
+            return False
+        else:
+            return True

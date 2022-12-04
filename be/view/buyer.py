@@ -11,6 +11,7 @@ def new_order():
     user_id: str = request.json.get("user_id")
     store_id: str = request.json.get("store_id")
     books: [] = request.json.get("books")
+
     id_and_count = []
     for book in books:
         book_id = book.get("id")

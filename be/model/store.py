@@ -4,18 +4,18 @@ import jieba
 import numpy as np
 import os
 import logging
+import datetime, time
 
 
 # 创建表
 class Store:
     def __init__(self):
-        self.host = '127.0.0.1'
+        self.host = 'dase-cdms-2022-pub.pg.rds.aliyuncs.com'
         self.port = '5432'
-        self.user = 'postgres'
-        self.password = 'tqy020107'
-        self.database = 'cdms2022'
+        self.user = 'stu10205501416'
+        self.password = 'Stu10205501416'
+        self.database = 'stu10205501416'
         self.init_tables()
-
 
     def fetch_all_db(self):
         conn = self.get_db_conn()
@@ -105,7 +105,7 @@ class Store:
                 'status INTEGER,'  # 0为未付款（*这里可以不要 如果我们后面写的是点击购买后直接扣款就直接进入状态1），
                 # 1为以付款未发货（买家付款后，商家填入物流前），
                 # 2为已发货未收货（商家填入物流后，买家确认收货前），3为已收货完成订单 
-                'time TEXT,'  # 下单时间，格式为 'YYYY-MM-DD HH:MM:SS.SSS' 的日期
+                'time TEXT,'  # 下单时间，格式为 'YYYY-MM-DD HH:MM:SS' 的日期
                 'book_id TEXT,'  # 书本编号
                 'price INTEGER,'  # 书本价格
                 'FOREIGN KEY(store) REFERENCES Store(store_id),'
@@ -166,10 +166,13 @@ class Store:
                 sql = "insert into Books_in_store(store_id, book_id, book_name, book_num) values (%s, %s, %s, %s)"
                 conn.executemany(sql, values)
 
+            order_time = time.time()
+            order_time = time.strftime('%Y-%m-%d %H:%M:%S')
+            
             sql = "select * from Orders"
             conn.execute(sql)
             if not conn.fetchall():
-                values = [['order_1', 'test_id','test_id_2', 'store_1', 3, '2022-11-25 23:00:50.000', '1000067', 10]]
+                values = [['order_1', 'test_id','test_id_2', 'store_1', 3, order_time, '1000067', 10]]
                 sql = "insert into Orders (order_id, seller, buyer, store, status, time, book_id, price) values (%s, %s, %s, %s, " \
                       "%s, %s, %s, %s) "
                 conn.executemany(sql, values)
@@ -191,4 +194,3 @@ def init_database():
 def get_db_conn():
     global database_instance
     return database_instance.get_db_conn()
-
