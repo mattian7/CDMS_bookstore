@@ -1,5 +1,7 @@
 import psycopg2
 import pandas as pd
+import jieba
+import numpy as np
 import os
 import logging
 import datetime, time
@@ -65,7 +67,8 @@ class Store:
                 'book_intro text,'
                 'content TEXT,'
                 'tags TEXT,'
-                'picture BYTEA'
+                'picture BYTEA,'
+                'v_content TEXT'
                 ')'
             )
 
@@ -121,16 +124,29 @@ class Store:
             sql = "select * from Book"
             conn.execute(sql)
             if not conn.fetchall():
-                f = open("C:/Users/18210/Desktop/2022_cdms_pj2_require/fe/data/book.csv", encoding="utf-8") # ../fe/data/book.csv
+                f = open("../fe/data/book.csv", encoding="utf-8")
                 values = pd.read_csv(f)
                 f.close()
-                values=values.values
+                s_content = values.iloc[:, 14]
+                v_content = []
+                for i in range(len(s_content)):
+                    vector = ''
+                    seg_list = jieba.cut(str(s_content[i]))
+                    for s in seg_list:
+                        vector += s
+                        vector += ' '
+                    v_content.append(vector)
+                v_content = np.array(v_content)
+                values['v_content'] = v_content
+                values = values.values
                 sql = "insert into Book(book_id, title, author, publisher, original_title, translator, pub_year , " \
                       "pages, price ," \
-                      "currency_unit ,binding,isbn ,author_intro,book_intro ,content ,tags, picture) values (%s,%s, %s, %s, " \
+                      "currency_unit ,binding,isbn ,author_intro,book_intro ,content ,tags, picture, v_content) values (%s,%s, %s, %s, " \
                       "%s, %s,%s, %s, %s, " \
-                      "%s, %s,%s, %s, %s, %s, %s, %s) "
+                      "%s, %s,%s, %s, %s, %s, %s, %s, %s) "
                 conn.executemany(sql, values)
+                conn.execute("alter table Book add column tscontent tsvector;")
+                conn.execute("update Book set tscontent=to_tsvector('simple', v_content);")
 
             sql = "select * from Store"
             conn.execute(sql)
