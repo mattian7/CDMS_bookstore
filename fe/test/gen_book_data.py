@@ -39,6 +39,7 @@ class GenBook:
             book_id_stock_level[bk.id] = stock_level
             book_id_exist.append(bk)
 
+
         for bk in book_id_exist:
             stock_level = book_id_stock_level[bk.id]
             if stock_level > 1:

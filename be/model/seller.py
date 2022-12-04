@@ -35,7 +35,6 @@ class Seller(db_conn.DBConn):
             return 530, "{}".format(str(e))
         return 200, "ok"
         
-
     #添加存在的书
     def add_stock_level(self, user_id: str, store_id: str, book_id: str, add_num: int):
         try:
@@ -71,4 +70,27 @@ class Seller(db_conn.DBConn):
         # except BaseException as e:
         #     print(e)
         #     return 530, "{}".format(str(e))
+        return 200, "ok"
+
+
+    # 发货
+    def send(self,seller_id,order_id):
+        try:
+            if not self.user_id_exist(seller_id): # 判断 seller_id 是否存在
+                return error.error_non_exist_user_id(seller_id)
+            if not self.order_id_exist(order_id): # 判断 order_id 是否存在
+                return error.error_invalid_order_id(order_id)
+
+            self.conn.execute("SELECT status FROM Orders where order_id = '%s'" %(order_id))
+            row = self.conn.fetchone()
+            status = row[0]
+            if status != 1:
+                return error.error_invalid_order_status(order_id)
+
+            self.conn.execute("UPDATE Orders set status=2 where order_id = '%s'" % (order_id))
+
+        except psycopg2.Error as e:
+            print(e)
+            return 528, "{}".format(str(e))
+
         return 200, "ok"

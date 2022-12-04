@@ -28,7 +28,7 @@ def remove_overtime_order(order_id):
 def check_order_time(order_time):
     cur_time = time.time()
     st_ti = time.strptime(order_time,'%Y-%m-%d %H:%M:%S')
-    print("----------------st_ti:", st_ti)
+    # print("----------------st_ti:", st_ti)
     order_time = time.mktime(st_ti)
     time_diff = (cur_time - order_time)
     if time_diff > time_limit:

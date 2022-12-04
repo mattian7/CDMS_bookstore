@@ -40,3 +40,15 @@ def add_stock_level():
     code, message = s.add_stock_level(user_id, store_id, book_id, add_num)
 
     return jsonify({"message": message}), code
+
+
+# 发货
+@bp_seller.route("/send", methods=["POST"])
+def send():
+    store_id: str = request.json.get("store_id")
+    order_id: str = request.json.get("order_id")
+
+    s = seller.Seller()
+    code, message = s.send(store_id, order_id)
+
+    return jsonify({"message": message}), code
