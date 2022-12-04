@@ -8,3 +8,5 @@ pytest
 PyJWT
 requests
 pandas
+jieba
+numpy
