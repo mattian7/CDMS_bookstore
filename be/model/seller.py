@@ -35,6 +35,7 @@ class Seller(db_conn.DBConn):
             return 530, "{}".format(str(e))
         return 200, "ok"
         
+
     #添加存在的书
     def add_stock_level(self, user_id: str, store_id: str, book_id: str, add_num: int):
         try:

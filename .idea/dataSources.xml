@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="book" uuid="8e1c92cc-7303-4589-8176-c2da95d34626">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:D:\桌面文件\大三上笔记\数据管理系统\书店\2022_CDMS_PJ2_REQUIRE-master\2022_cdms_pj2_require\bookstore\fe\data\book.db</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="be" uuid="c9800b5c-3bb7-403a-b2a6-37c2396f5806">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:D:\桌面文件\大三上笔记\数据管理系统\书店\2022_CDMS_PJ2_REQUIRE-master\2022_cdms_pj2_require\bookstore\be.db</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>
