@@ -2,6 +2,7 @@ from flask import Blueprint
 from flask import request
 from flask import jsonify
 from be.model.buyer import Buyer
+from be.model.order_list import Order
 
 bp_buyer = Blueprint("buyer", __name__, url_prefix="/buyer")
 
@@ -54,5 +55,26 @@ def receive():
     password: str = request.json.get("password")
     b = Buyer()
     code, message = b.receive(user_id, password, order_id)
+
+    return jsonify({"message": message}), code
+
+
+# 查询订单
+@bp_buyer.route("/query", methods=["POST"])
+def receive():
+    user_id: str = request.json.get("user_id")
+    order_id: str = request.json.get("order_id")
+    b = Buyer()
+    code, message = b.query_order(user_id, order_id)
+
+    return jsonify({"message": message}), code
+
+
+# 取消订单
+@bp_buyer.route("/cancel", methods=["POST"])
+def receive():
+    order_id: str = request.json.get("order_id")
+    o = Order()
+    code, message = o.cancel_order(order_id)
 
     return jsonify({"message": message}), code
