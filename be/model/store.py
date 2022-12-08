@@ -10,21 +10,18 @@ import datetime, time
 # 创建表
 class Store:
     def __init__(self):
-        self.host = 'dase-cdms-2022-pub.pg.rds.aliyuncs.com'
+        # self.host = 'dase-cdms-2022-pub.pg.rds.aliyuncs.com'
+        # self.port = '5432'
+        # self.user = 'stu10205501430'
+        # self.password = 'Stu10205501430'
+        # self.database = 'stu10205501430'
+        self.host = '127.0.0.1'
         self.port = '5432'
-        self.user = 'stu10205501416'
-        self.password = 'Stu10205501416'
-        self.database = 'stu10205501416'
+        self.user = 'postgres'
+        self.password = 'tqy020107'
+        self.database = 'cdms2022'
         self.init_tables()
 
-    def fetch_all_db(self):
-        conn = self.get_db_conn()
-        sql = 'select current_database();'
-        # 执行SQL
-        conn.execute(sql)
-        # SQL执行后，会将结果以元组的形式缓存在cursor中，使用下述语句输出
-        for tuple in conn.fetchall():
-            print(tuple)
 
     def get_db_conn(self):
         self.con = psycopg2.connect(host=self.host, port=self.port, user=self.user,
@@ -71,14 +68,15 @@ class Store:
                 'v_content TEXT'
                 ')'
             )
+            conn.execute("CREATE INDEX IF NOT EXISTS search_index ON Book (title,author,tags);")
 
             conn.execute(
                 'CREATE TABLE IF NOT EXISTS Store('
                 'store_id TEXT PRIMARY KEY,'  # 店铺编号
-                'owner TEXT UNIQUE,'  # 卖家user_id
-                'FOREIGN KEY(owner) REFERENCES User1(user_id)'
+                'owner TEXT'  # 卖家user_id
                 ')'
             )
+            conn.execute("CREATE INDEX IF NOT EXISTS store_owner ON Store (owner);")
 
             conn.execute(
                 'CREATE TABLE IF NOT EXISTS Books_in_store( '
@@ -106,11 +104,11 @@ class Store:
                 'book_id TEXT,'  # 书本编号
                 'price INTEGER,'  # 书本价格
                 'FOREIGN KEY(store) REFERENCES Store(store_id),'
-                'FOREIGN KEY(seller) REFERENCES Store(owner),'
-                'FOREIGN KEY(buyer) REFERENCES User1(user_id),'
                 'FOREIGN KEY(book_id) REFERENCES Book(book_id)'
                 ')'
             )
+            conn.execute("CREATE INDEX IF NOT EXISTS order_seller ON Orders (seller);")
+            conn.execute("CREATE INDEX IF NOT EXISTS order_buyer ON Orders (buyer);")
 
             # 插入初始数据
             sql = "select * from User1"
@@ -124,7 +122,7 @@ class Store:
             sql = "select * from Book"
             conn.execute(sql)
             if not conn.fetchall():
-                f = open("../fe/data/book.csv", encoding="utf-8")
+                f = open("fe/data/book.csv", encoding="utf-8")
                 values = pd.read_csv(f)
                 f.close()
                 s_content = values.iloc[:, 14]

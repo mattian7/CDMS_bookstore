@@ -21,7 +21,7 @@ def param_search():
 @bp_search.route("/content_search", methods=["POST"])
 def content_search():
     sub_content: str = request.json.get("sub_content")
-    store_id = request.headers.get("store_id")
+    store_id = request.json.get("store_id")
     u = user.User()
     code, message = u.whole_content_search(sub_content=sub_content, store_id=store_id)
     return jsonify({"message": message}), code

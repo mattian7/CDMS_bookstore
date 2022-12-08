@@ -1,9 +1,8 @@
 from be.model.order_list import Order
 import time
-import datetime
 
 
-time_limit = 900
+time_limit = 60
 unpaid_orders = {}
 
 
@@ -36,14 +35,13 @@ def check_order_time(order_time):
     else:
         return True
 
-
-def auto_delete():
-    temp = []
-    order = Order()
-    for (oid, tim) in unpaid_orders.items():
-        if check_order_time(tim) == False:
-            temp.append(oid)
-    for oid in temp:
-        remove_overtime_order(oid)
-        order.cancel_order(oid)
-    return 0
+# def auto_delete():
+#     temp = []
+#     order = Order()
+#     for (oid, tim) in unpaid_orders.items():
+#         if check_order_time(tim) == False:
+#             temp.append(oid)
+#     for oid in temp:
+#         remove_overtime_order(oid)
+#         order.cancel_order(oid)
+#     return 0

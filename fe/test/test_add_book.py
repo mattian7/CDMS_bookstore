@@ -23,6 +23,7 @@ class TestAddBook:
         # do after test
 
     def test_ok(self):
+
         for b in self.books:
             code = self.seller.add_book(self.store_id, 0, b)
             assert code == 200

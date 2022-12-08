@@ -4,7 +4,6 @@ from fe.test.gen_book_data import GenBook
 from fe.access.new_buyer import register_new_buyer
 from fe.access.book import Book
 import uuid
-import random
 
 
 class Test_search_order:
